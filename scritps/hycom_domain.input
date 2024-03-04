@@ -1,0 +1,91 @@
+This is the header file to run a hycom simulation. In this file the user must to provide information regarding
+to the domains (time and space) and system paths.
+This is part of the set of scripts to run hycom
+
+Set it properly!
+
+Written by Leonardo Carvalho - LABESUL/UFES
+
+!************************************************************************************************************!
+!--------------------------------------------SYSTEM PATHS----------------------------------------------------!
+!************************************************************************************************************!
+
+			In this section the user must set the system paths to the
+			pre-processing exec, hycom root dir and to the mpi bin
+
+Obs.: This variables are named as - var : value : description
+
+\* paths:
+
+hycom_root_dir	: /home/geociencias/Models/HYCOM				    : hycom root dir (where the data and experiment will be held)
+all_path	    : /home/geociencias/Models/HYCOM/source/HYCOM-tools	: path to the pre-processing programs (ALL)
+scpt_dir	    : /home/geociencias/Models/HYCOM/scripts			: dir with this package (where you put the scrits)
+mpi_bin_path	: /opt/mpich-3.0.4-noshared/bin				        : mpich bin path (with mpd and mpirun)
+
+*\
+
+!************************************************************************************************************!
+!--------------------------------------------SPACE DOMAIN----------------------------------------------------!
+!************************************************************************************************************!
+		
+			In this section the user must set the domain infomations like:
+			their names, coordinates and grid spacing.
+
+Obs.: For nesting applications the user can provide the information through sequential grids (being this nested
+in the previous grid). To turn on this option supply the number of domains (father + nested) in the max domain var.
+
+max_domain	: 1		: number of domains (father + nested domains, in a max of 3)
+
+\* d01 (Father domain):
+
+d01_name	: ATLu0.20			: d01 domain name (keep it simple as possible, use up to 10 caracter)
+d01_lat		: -80.00	: 53.00		: southest and northest latitudes of the grid
+d01_lon		: 262.00	: 416.00	: westest and eastest longitudes of the grid
+d01_dx		: 0.24				: longitudinal grid spacing
+d01_dy		: 0.24				: latitudinal grid spacing
+d01_kdm		: 22				: number of vertical layers 
+d01_sig		: 0				: sigma target to the ocean density equation
+
+*\
+
+
+\* d02 (First nested domain):
+
+d02_name	: BRAa0.08	: d03 domain name (keep it simple as possible, use up to 10 caracter)
+d02_lat		: -26.8	: -9	: southest and northest latitudes of the grid
+d02_lon		: 311	: 333.8	: westest and eastest longitudes of the grid
+d02_dx		: 0.08		: longitudinal grid spacing
+d02_dy		: 0.08		: latitudinal grid spacing
+d02_kdm		: 21		: number of vertical layers 
+d02_sig		: 0		: sigma target to the ocean density equation
+
+*\
+
+
+\* d03 (Second nested domain):
+
+d03_name	: teste		: d03 domain name (keep it simple as possible, use up to 10 caracter)
+d03_lat		: -26.8	: -9	: southest and northest latitudes of the grid
+d03_lon		: 311	: 333.8	: westest and eastest longitudes of the grid
+d03_dx		: 0.08		: longitudinal grid spacing
+d03_dy		: 0.08		: latitudinal grid spacing
+d03_kdm		: 21		: number of vertical layers 
+d03_sig		: 0		: sigma target to the ocean density equation
+
+*\
+
+!************************************************************************************************************!
+!---------------------------------------------TIME DOMAIN----------------------------------------------------!
+!************************************************************************************************************!
+
+			In this section the user must set the time infomations like:
+			simulation period or number of yers to run the climatology,
+			run mode (climatological or actual)
+
+run_mode	: actual	: hycom run mode (must be clim for climatology or actual for "actual" days)
+start_date	: 20080905	: start date for actual run mode in the yyyymmdd format
+end_date	: 20081125	: end date for acutal run mode in the yyyymmdd format
+nyears		: 5		    : number of years for a climatological simulation (this is just for clim runs)
+
+
+
