@@ -3,7 +3,7 @@
 # This program creates the regional.[a,b] used to biuld the bathymetry
 # This uses hycom_domain.input file (set it properly)
 # 
-# Programmed by Leonardo Carvalho - LABESUL/UFES
+# Programmed by Leonardo Carvalho
 # version alpha 1 - 12/11/2014
 
 grid_id=$1

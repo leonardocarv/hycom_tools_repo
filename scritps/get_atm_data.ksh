@@ -2,7 +2,7 @@
 #
 # This script downloads the atmospheric data from NCEP in hycom format
 #
-# Programmed by Leonardo Carvalho - LABESUL/UFES
+# Programmed by Leonardo Carvalho
 #
 
 idate=$1

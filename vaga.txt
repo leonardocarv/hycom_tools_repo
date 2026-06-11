@@ -1,0 +1,4 @@
+Testar e avaliar novas configurações da grade METAREAV
+Detalhamento *	Desenvolver, testar, implementar e avaliar uma nova estrutura vertical das camadas de mesma densidade (isopicnais) no modelo oceanográfico HYCOM.
+Testar e avaliar a possibilidade de implantação de um novo esquema de aninhamento para o modelo oceanográfico HYCOM, utlizando uma resolução horizontal final de 1/48 do grau (aprox. 2,3km).
+Testar extensão do domínio para norte e oeste.

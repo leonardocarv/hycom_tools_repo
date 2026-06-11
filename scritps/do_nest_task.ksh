@@ -3,7 +3,7 @@
 # This script makes the bathymetry and the needed input files to run a hycom nested
 # application.
 #
-# Written by Leonardo Carvalho - LABESUL/UFES
+# Written by Leonardo Carvalho
 #
 
 grid_id=$1

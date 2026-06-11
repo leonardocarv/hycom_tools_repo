@@ -1,7 +1,7 @@
 #! /bin/ksh
 #
 # This program starts a hycom climatological run
-# Written by Leonardo Carvalho - LABESUL/UFES
+# Written by Leonardo Carvalho
 #
 grid_id=$1
 kdm=$2

@@ -1,7 +1,7 @@
 #! /bin/ksh
 #
 # This program interpolates the hycom climotology to the hycom grid/depth
-# Written by Leonardo Carvalho - LABESUL/UFES
+# Written by Leonardo Carvalho
 #
 grid_id=$1		# Domain indice (1 for father, 2 for first nested...)
 sigma=$2      		# Flag to sigma target (0 for sigma0 or 2 for sigma2)

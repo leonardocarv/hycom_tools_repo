@@ -3,7 +3,7 @@
 # This is the master script to run a hycom application. No input required.
 # Just run this script.
 #
-# Written by Leonardo Carvalho - LABESUL/UFES
+# Written by Leonardo Carvalho
 #
 
 grep scpt_dir hycom_domain.input		| cut -d":" -f2	| read scpt_dir
