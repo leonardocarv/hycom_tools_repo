@@ -35,10 +35,8 @@ configurações se resume a editar a configuração e re-executar.
 - Modelo **HYCOM** e o pacote de ferramentas de pré-processamento
   **HYCOM-tools (ALL)** instalados.
 - **MPICH** (MPI) para a execução paralela do modelo.
-- **MATLAB** (usado na detecção automática dos portos de fronteira no
-  aninhamento).
 - Utilitários padrão de sistema: `bc`, `date`, `grep`, `cut`, `tar`.
-- Dados de entrada: climatologia (WOA13 / Levitus) e forçante atmosférica
+- Dados de entrada: climatologia (WOA / Levitus) e forçante atmosférica
   (CFSR / ERA-15).
 
 ---
@@ -57,7 +55,7 @@ Os scripts ficam em `scritps/`:
 | `do_blkdat.ksh` | Monta o `blkdat.input` (nº de camadas, dp00, flags) de forma consistente com o kdm e o sigma. |
 | `do_iso_sigma.ksh` | Define a estrutura vertical isopicnal (densidades-alvo das camadas), com suporte a sub-regiões. |
 | `do_levitus_sig.ksh` | Interpola a climatologia de Levitus para a grade/profundidade do modelo. |
-| `do_woa_clim.ksh` | Interpola a climatologia WOA13 para a grade do modelo. |
+| `do_woa_clim.ksh` | Interpola a climatologia WOA para a grade do modelo. |
 | `do_relax.ksh` | Gera os campos de relaxação (climatologia) coerentes com a estrutura vertical. |
 | `do_atm_forcing.ksh` | Interpola a forçante atmosférica (CFSR / ERA-15) para a grade do modelo. |
 | `get_atm_data.ksh` | Baixa os dados atmosféricos (NCEP/CFSR) no formato do HYCOM. |
